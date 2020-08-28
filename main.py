@@ -1,13 +1,6 @@
 import os
-import sys
-import django
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
-django.setup()
+from django.core.management import execute_from_command_line
 
-from datacenter.models import Passcard, Visit
-
-
-if __name__ == "__main__":
-    # Программируем здесь
-    print('Количество пропусков:', Passcard.objects.count())
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "project.settings")
+execute_from_command_line("manage.py runserver 0.0.0.0:8000".split())
