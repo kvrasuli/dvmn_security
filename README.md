@@ -12,4 +12,4 @@ Run the python script main.py with the following console command:
 ```
 python3 main.py
 ```
-Open in your browser [https://127.0.0.1:8000]
+Open in your browser https://127.0.0.1:8000.
