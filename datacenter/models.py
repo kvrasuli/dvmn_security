@@ -34,9 +34,7 @@ class Visit(models.Model):
         return f'{int(hours)}h {int(minutes)}m'
 
     def is_long(self, minutes=60):
-        if self.get_duration() > minutes * 60:
-            return True
-        return False
+        return self.get_duration() > minutes * 60
 
     def __str__(self):
         return "{user} entered at {entered} {leaved}".format(
