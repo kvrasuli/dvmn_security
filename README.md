@@ -1,8 +1,8 @@
 # Security control panel
 
-This is the Django web app to control visits to the bank vault. It is connected to bank's database server.
+This is the Django web app to control visits to the bank vault. It connects to the bank's database server, but connection settings are hidden for now, so you can just use the html markup or check how the data models are implemented.
 
-### How to run
+### How to run (if you have a proper settings as env variables)
 
 Python3 should be already installed. Then install dependencies:
 ```
