@@ -8,8 +8,21 @@ Python3 should be already installed. Then install dependencies:
 ```
 pip install -r requirements.txt
 ```
-Run the python script main.py with the following console command:
+Create the following environment variables:
 ```
-python3 main.py
+SECRET_KEY='app secret key'
+DEBUG='debug mode - True or False'
+```
+Database server connection settings:
+```
+DB_HOST='database host'
+DB_PORT='database port'
+DB_NAME='database name'
+DB_USER='database username'
+DB_PASSWORD='database password'
+```
+Run the following console command:
+```
+python3 manage.py runserver
 ```
 Open in your browser https://127.0.0.1:8000.
